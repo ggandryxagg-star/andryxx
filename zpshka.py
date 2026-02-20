@@ -56,7 +56,7 @@ def main(page: ft.Page):
 
     btn_day = ft.Dropdown(
         text='Выберете смену',
-        width=100,
+        width=250,
         options=[
             ft.dropdown.Option('День'),
             ft.dropdown.Option('Ночь')
@@ -65,7 +65,7 @@ def main(page: ft.Page):
 
     btn_prem = ft.Dropdown(
         text='Выберете выручку',
-        width=100,
+        width=250,
         options=[
             ft.dropdown.Option('Больше 10к'),
             ft.dropdown.Option('Больше 12к'),
@@ -75,14 +75,22 @@ def main(page: ft.Page):
             ft.dropdown.Option('Больше 21к')
         ]
     )
-   
-    page.add(ft.Row(
-        controls=[
-            btn_day, 
-            btn_prem
-        ]
-    ),
-    ft.MainAxisAlignment.CENTER
-             )
+    
+    page.add(
+        ft.Row(
+            controls=[
+                btn_day
+            ]
+        )
+    )
+    
+    page.add(
+        ft.Row(
+            controls=[
+                btn_prem
+            ]
+        )
+    )
+
 
 ft.run(main=main)
