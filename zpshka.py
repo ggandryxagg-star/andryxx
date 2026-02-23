@@ -39,7 +39,24 @@ def main(page: ft.Page):
 
 
     def zpia(e):
-        pass
+        
+        smen = None
+
+        if btn_day.value == 'День':
+
+            smen = prem['day']
+
+            page.add(smen)
+            page.update
+
+
+        elif btn_day.selected_suffix == 'Ночь':
+
+            smen = prem['night']
+
+            page.add(smen)
+            page.update
+
 
 
     btn_day = ft.Dropdown(
@@ -66,7 +83,7 @@ def main(page: ft.Page):
         ]
     )
 
-    btn_subm = ft.Button('Отправить', width=100, on_click=zpia)
+    btn_subm = ft.Button('Отправить', width=200, on_click=zpia)
     
     page.add(
         btn_day, btn_prem
