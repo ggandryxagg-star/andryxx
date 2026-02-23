@@ -45,15 +45,15 @@ def main(page: ft.Page):
         if btn_day.value == 'День':
 
             smen = prem['day']
-
+            print(smen)
             page.add(smen)
             page.update
 
 
-        elif btn_day.selected_suffix == 'Ночь':
+        elif btn_day.on_select == 'Ночь':
 
             smen = prem['night']
-
+            print(smen)
             page.add(smen)
             page.update
 
