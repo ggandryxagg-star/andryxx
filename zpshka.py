@@ -46,11 +46,10 @@ def main(page: ft.Page):
 
             smen = prem['day']
             print(smen)
-            page.add(smen)
-            page.update
+            
 
 
-        elif btn_day.on_select == 'Ночь':
+        elif btn_day.value == 'Ночь':
 
             smen = prem['night']
             print(smen)
