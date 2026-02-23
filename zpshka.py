@@ -38,25 +38,14 @@ def main(page: ft.Page):
             page.update()
 
 
-    def day(e):
-
-        zpday = zps('ДЕНЬ')
-
-        page.add(zpday)
-        page.update()
-
-
-    def night(e):
-
-        zpnight = zps('НОЧЬ')
-
-        page.add(zpnight)
-        page.update()
+    def zpia(e):
+        pass
 
 
     btn_day = ft.Dropdown(
         text='Выберете смену',
         width=250,
+        on_select=zpia,
         options=[
             ft.dropdown.Option('День'),
             ft.dropdown.Option('Ночь')
@@ -66,6 +55,7 @@ def main(page: ft.Page):
     btn_prem = ft.Dropdown(
         text='Выберете выручку',
         width=250,
+        on_select=zpia,
         options=[
             ft.dropdown.Option('Больше 10к'),
             ft.dropdown.Option('Больше 12к'),
@@ -75,22 +65,15 @@ def main(page: ft.Page):
             ft.dropdown.Option('Больше 21к')
         ]
     )
+
+    btn_subm = ft.Button('Отправить', width=100, on_click=zpia)
     
     page.add(
-        ft.Row(
-            controls=[
-                btn_day
-            ]
-        )
+        btn_day, btn_prem
     )
+
+    page.add(btn_subm)
     
-    page.add(
-        ft.Row(
-            controls=[
-                btn_prem
-            ]
-        )
-    )
 
 
 ft.run(main=main)
