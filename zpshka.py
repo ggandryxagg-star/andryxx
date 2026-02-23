@@ -62,7 +62,6 @@ def main(page: ft.Page):
     btn_day = ft.Dropdown(
         text='Выберете смену',
         width=250,
-        on_select=zpia,
         options=[
             ft.dropdown.Option('День'),
             ft.dropdown.Option('Ночь')
@@ -72,7 +71,6 @@ def main(page: ft.Page):
     btn_prem = ft.Dropdown(
         text='Выберете выручку',
         width=250,
-        on_select=zpia,
         options=[
             ft.dropdown.Option('Больше 10к'),
             ft.dropdown.Option('Больше 12к'),
