@@ -45,18 +45,40 @@ def main(page: ft.Page):
         if btn_day.value == 'День':
 
             smen = prem['day']
-            print(smen)
-            
-
 
         elif btn_day.value == 'Ночь':
 
             smen = prem['night']
-            print(smen)
-            page.add(smen)
-            page.update
 
+        if btn_prem.value == 'Больше 10к':
 
+            smen += prem['k10']
+
+        elif btn_prem.value == 'Больше 10к':
+
+            smen += prem['k12']
+
+        elif btn_prem.value == 'Больше 10к':
+
+            smen += prem['k15']
+
+        elif btn_prem.value == 'Больше 10к':
+
+            smen += prem['k17']
+
+        elif btn_prem.value == 'Больше 10к':
+
+            smen += prem['k19']
+
+        elif btn_prem.value == 'Больше 10к':
+
+            smen += prem['k21']
+
+        elif btn_prem.value == 'Больше 10к':
+
+            smen += prem['k23']
+
+        print(smen)
 
     btn_day = ft.Dropdown(
         text='Выберете смену',
