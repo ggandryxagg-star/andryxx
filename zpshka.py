@@ -50,31 +50,32 @@ def main(page: ft.Page):
 
             smen = prem['night']
 
+
         if btn_prem.value == 'Больше 10к':
 
             smen += prem['k10']
 
-        elif btn_prem.value == 'Больше 10к':
+        elif btn_prem.value == 'Больше 12к':
 
             smen += prem['k12']
 
-        elif btn_prem.value == 'Больше 10к':
+        elif btn_prem.value == 'Больше 15к':
 
             smen += prem['k15']
 
-        elif btn_prem.value == 'Больше 10к':
+        elif btn_prem.value == 'Больше 17к':
 
             smen += prem['k17']
 
-        elif btn_prem.value == 'Больше 10к':
+        elif btn_prem.value == 'Больше 19к':
 
             smen += prem['k19']
 
-        elif btn_prem.value == 'Больше 10к':
+        elif btn_prem.value == 'Больше 21к':
 
             smen += prem['k21']
 
-        elif btn_prem.value == 'Больше 10к':
+        elif btn_prem.value == 'Больше 23к':
 
             smen += prem['k23']
 
