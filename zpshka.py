@@ -79,7 +79,10 @@ def main(page: ft.Page):
 
             smen += prem['k23']
 
-        print(smen)
+        smen = zps(smen)
+
+        page.add(smen, ft.MainAxisAlignment.CENTER)
+        page.update()
 
     btn_day = ft.Dropdown(
         text='Выберете смену',
