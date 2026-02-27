@@ -35,10 +35,12 @@ def main(page: ft.Page):
             
             self.info = info
 
-            textik = ft.Text(info, width=200)
-            page.add(textik)
-            page.update()
+        def podshet(self):
 
+            textik = ft.Text(str(self.info), width=200)
+
+            page.add('Ваша зп: {textik}')
+            page.update()
 
     def zpia(e):
         
