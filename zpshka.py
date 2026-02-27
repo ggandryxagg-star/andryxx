@@ -35,6 +35,8 @@ def main(page: ft.Page):
             
             self.info = info
 
+            textik = ft.Text(info, width=200)
+            page.add(textik)
             page.update()
 
 
