@@ -28,20 +28,6 @@ def main(page: ft.Page):
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.MainAxisAlignment.CENTER
 
-
-    class zps:
-        
-        def __init__(self, info ):
-            
-            self.info = info
-
-        def podshet(self):
-
-            textik = ft.Text(str(self.info), width=200)
-
-            page.add('Ваша зп: {textik}')
-            page.update()
-
     def zpia(e):
         
         smen = None
@@ -82,8 +68,6 @@ def main(page: ft.Page):
         elif btn_prem.value == 'Больше 23к':
 
             smen += prem['k23']
-
-        smen = zps(smen)
 
         page.add(smen, ft.MainAxisAlignment.CENTER)
         page.update()
