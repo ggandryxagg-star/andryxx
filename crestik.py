@@ -5,6 +5,8 @@ def main(page: ft.Page):
     
     page.title = 'Крестики нолики'
 
+    page.theme = 'dark'
+
     page.window.height = 900
     page.window.width = 900
 
