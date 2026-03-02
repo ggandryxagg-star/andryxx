@@ -10,7 +10,7 @@ def main(page: ft.Page):
     page.horizontal_alignment = ft.MainAxisAlignment.CENTER
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
 
-    btn = ft.Button(icon=ft.Icons.ARROW_CIRCLE_DOWN)
+    btn = ft.IconButton('', icon=ft.Icons.ARROW_CIRCLE_DOWN, width=50)
 
     page.add(btn)
 
