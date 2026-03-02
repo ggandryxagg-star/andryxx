@@ -20,7 +20,24 @@ def main(page: ft.Page):
     btn7 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100)
     btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100)
     
-    page.add(btn, btn1, btn2)
+    column1 = ft.Column(
+        controls=[
+            btn, btn1, btn2
+        ]
+    )
+
+    column2 = ft.Column(
+        controls=[
+            btn3, btn4, btn5
+        ]
+    )
+
+    column3 = ft.Column(
+        controls=[
+            btn6, btn7, btn8
+        ]
+    )
+    page.add(column1, column2, column3)
 
 
 
