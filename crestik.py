@@ -22,26 +22,9 @@ def main(page: ft.Page):
     btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100)
     
 
-    column1 = ft.StrokeJoin(
-        controls=[
-            btn, btn1, btn2
-        ]
-    )
-
-    column2 = ft.Column(
-        controls=[
-            btn3, btn4, btn5
-        ]
-    )
-
-    column3 = ft.Column(
-        controls=[
-            btn6, btn7, btn8
-        ]
-    )
+    column1 = ft.StrokeJoin(btn, btn1, btn2)
 
     page.add(column1)
-    page.add(column2)
-    page.add(column3)
+
 
 ft.app(target=main)
