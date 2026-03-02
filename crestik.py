@@ -24,9 +24,9 @@ def main(page: ft.Page):
     btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100)
     
 
-    column1 = btn, btn1, btn2
+   
 
-    page.add(column1)
+    page.add(btn, btn1, btn2)
 
 
 ft.app(target=main)
