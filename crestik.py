@@ -29,4 +29,4 @@ def main(page: ft.Page):
     page.add(btn, btn1, btn2)
 
 
-ft.app(target=main)
+ft.run(main=main)
