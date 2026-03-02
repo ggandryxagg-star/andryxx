@@ -1,5 +1,6 @@
 import flet as ft 
 
+
 def main(page: ft.Page):
     
     page.title = 'Крестики нолики'
@@ -20,6 +21,7 @@ def main(page: ft.Page):
     btn7 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100)
     btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100)
     
+
     column1 = ft.Column(
         controls=[
             btn, btn1, btn2
@@ -37,8 +39,9 @@ def main(page: ft.Page):
             btn6, btn7, btn8
         ]
     )
-    page.add(column1, column2, column3)
 
-
+    page.add(column1)
+    page.add(column2)
+    page.add(column3)
 
 ft.app(target=main)
