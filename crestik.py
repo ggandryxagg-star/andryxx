@@ -3,7 +3,7 @@ import flet as ft
 
 def main(page: ft.Page):
     
-    page.title = 'Крестики нолики'
+    page.title = 'Крестики_нолики'
 
     page.window.height = 900
     page.window.width = 900
@@ -22,6 +22,6 @@ def main(page: ft.Page):
     btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100)
 
     page.add(btn, btn1, btn2)
-
+    page.add(btn3, btn4, btn5)
 
 ft.run(main=main)
