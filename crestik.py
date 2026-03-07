@@ -28,7 +28,7 @@ def main(page: ft.Page):
             btn2
         ]
     ),
-    ft.MainAxisAlignment.START
+    ft.MainAxisAlignment.CENTER
 
     column2 = ft.Column(
         controls=[
