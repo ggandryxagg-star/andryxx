@@ -27,7 +27,8 @@ def main(page: ft.Page):
             btn1,
             btn2
         ]
-    )
+    ),
+    ft.MainAxisAlignment.START
 
     column2 = ft.Column(
         controls=[
@@ -35,7 +36,8 @@ def main(page: ft.Page):
             btn4,
             btn5
         ]
-    )
+    ),
+    ft.MainAxisAlignment.CENTER
 
     page.add(column1, column2)
     
