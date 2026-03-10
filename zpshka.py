@@ -69,7 +69,7 @@ def main(page: ft.Page):
 
             smen += prem['k23']
 
-        page.add(smen, ft.MainAxisAlignment.CENTER)
+        page.add(smen)
         page.update()
 
     btn_day = ft.Dropdown(
