@@ -22,20 +22,24 @@ def main(page: ft.Page):
     btn7 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
     btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
 
-    column1 = ft.Column(
+    column1 = ft.Row(
         controls=[
             btn,
             btn1,
             btn2
-        ]
+        ],
+        alignment=ft.MainAxisAlignment.START,
+        spacing=20
     )
 
-    column2 = ft.Column(
+    column2 = ft.Row(
         controls=[
             btn3,
             btn4,
             btn5
-        ]
+        ],
+        alignment=ft.MainAxisAlignment.START,
+        spacing=20
     )
     
 
