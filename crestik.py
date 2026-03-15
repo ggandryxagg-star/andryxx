@@ -22,6 +22,12 @@ def main(page: ft.Page):
     btn7 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
     btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
 
+    hods = 'Синие'
+
+    hods1 = 'Красные'
+        
+    hodi = ft.Text(value=f'Ходят: {hods}', size=200, width=500, height=250, align=ft.MainAxisAlignment.CENTER)
+
     column1 = ft.Row(
         controls=[
             btn,
@@ -41,9 +47,18 @@ def main(page: ft.Page):
         alignment=ft.MainAxisAlignment.CENTER,
         spacing=20
     )
-    
 
-    page.add(column1, column2)
+    column3 = ft.Row(
+        controls=[
+            btn6,
+            btn7,
+            btn8
+        ],
+        alignment=ft.MainAxisAlignment.CENTER,
+        spacing=20
+    )   
+
+    page.add(hodi, column1, column2, column3)
     
 
 ft.run(main=main)
