@@ -26,7 +26,7 @@ def main(page: ft.Page):
 
     hods1 = 'Красные'
         
-    hodi = ft.Text(value=f'Ходят: {hods}', size=200, width=500, height=250, align=ft.MainAxisAlignment.CENTER)
+    hodi = ft.Text(value=f'Ходят: {hods}', size=200, width=500, height=250)
 
     column1 = ft.Row(
         controls=[
