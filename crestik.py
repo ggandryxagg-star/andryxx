@@ -5,8 +5,8 @@ def main(page: ft.Page):
     
     page.title = 'Крестики нолики'
 
-    page.window.height = 900
-    page.window.width = 900
+    page.window.height = 1000
+    page.window.width = 1000
 
     def crest(e):
         pass
