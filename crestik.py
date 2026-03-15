@@ -28,7 +28,7 @@ def main(page: ft.Page):
             btn1,
             btn2
         ],
-        alignment=ft.MainAxisAlignment.START,
+        alignment=ft.MainAxisAlignment.CENTER,
         spacing=20
     )
 
@@ -38,7 +38,7 @@ def main(page: ft.Page):
             btn4,
             btn5
         ],
-        alignment=ft.MainAxisAlignment.START,
+        alignment=ft.MainAxisAlignment.CENTER,
         spacing=20
     )
     
