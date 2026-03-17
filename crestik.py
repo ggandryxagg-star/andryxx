@@ -12,7 +12,7 @@ def main(page: ft.Page):
     
     def crest(e):
         if btn.on_click == True:
-            btn.icon_color = 'dark'
+            btn.icon_color = "#0051ff"
             page.update()
 
 
