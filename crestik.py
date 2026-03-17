@@ -11,7 +11,7 @@ def main(page: ft.Page):
     ft.MainAxisAlignment.CENTER
     
     def crest(e):
-        if btn.on_click == True:
+        if btn.on_click == crest:
             btn.icon_color = "#0051ff"
             page.update()
 
