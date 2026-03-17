@@ -21,6 +21,16 @@ def main(page: ft.Page):
             hodi.value = f'Ходят: {hods1}'
             btn.disabled = True
             page.update
+        
+        if btn1.on_click == crest:
+            btn1.icon_color = "#3700ff"
+            btn1.icon = ft.Icons.STOP
+            btn1.icon_size = 100
+            hodi.value = f'Ходят: {hods1}'
+            btn1.disabled = True
+            page.update
+        
+        
 
     btn = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
     btn1 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
