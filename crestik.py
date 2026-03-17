@@ -14,7 +14,7 @@ def main(page: ft.Page):
 
     btn = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
     btn1 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-    btn2 = ft.IconButton(icon=ft.Icons.ADS_CLICK, width=150, height=150, icon_size=100, data=0, on_click=crest)
+    btn2 = ft.IconButton(icon=ft.Icons.CROP_SQUARE_SHARP, width=150, height=150, icon_size=100, data=0, on_click=crest)
 
     column1 = ft.Row(
         controls=[
