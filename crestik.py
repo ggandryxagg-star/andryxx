@@ -3,6 +3,10 @@ import flet as ft
 
 def main(page: ft.Page):
     
+    hods = ft.Text('Синие', color="#3700ff")
+
+    hods1 = ft.Text('Красные', color="#ff0808")
+
     page.title = 'Крестики нолики'
 
     page.window.height = 1000
@@ -15,6 +19,8 @@ def main(page: ft.Page):
         if btn.on_click == crest:
             btn.icon_color = "#3700ff"
             btn.icon = ft.Icons.STOP
+            btn.icon_size = 200
+            hodi.value = f'Ходят: {hods1}'
             page.update
 
     btn = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
@@ -26,10 +32,6 @@ def main(page: ft.Page):
     btn6 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
     btn7 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
     btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
-
-    hods = 'Синие'
-
-    hods1 = 'Красные'
         
     hodi = ft.Text(value=f'Ходят: {hods}', size=100, height=200)
 
