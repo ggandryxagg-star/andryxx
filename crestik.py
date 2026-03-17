@@ -17,9 +17,9 @@ def main(page: ft.Page):
         if btn.on_click == crest:
             btn.icon_color = "#3700ff"
             btn.icon = ft.Icons.STOP
-            btn.icon_size = 200
+            btn.icon_size = 150
             hodi.value = f'Ходят: {hods1}'
-            btn.disabled()
+            btn.disabled(True)
             page.update
 
     btn = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
