@@ -68,15 +68,15 @@ def main(page: ft.Page):
 
         if btn1.data + btn2.data + btn.data + btn4.data + btn5.data% 2 == 1:
 
-            btn.icon = ft.Icons.STOP
-            btn.icon_color = "#ff0000"
-            btn.disabled = True
+            btn3.icon = ft.Icons.STOP
+            btn3.icon_color = "#ff0000"
+            btn3.disabled = True
 
         else:
 
-            btn.icon = ft.Icons.STOP
-            btn.icon_color = "#1e01fb"
-            btn.disabled = True
+            btn3.icon = ft.Icons.STOP
+            btn3.icon_color = "#1e01fb"
+            btn3.disabled = True
 
         page.update()
 
@@ -86,15 +86,15 @@ def main(page: ft.Page):
 
         if btn.data + btn2.data + btn3.data + btn1.data + btn5.data % 2 == 1:
 
-            btn1.icon = ft.Icons.STOP
-            btn1.icon_color = "#ff0000"
-            btn1.disabled = True
+            btn4.icon = ft.Icons.STOP
+            btn4.icon_color = "#ff0000"
+            btn4.disabled = True
 
         else:
 
-            btn1.icon = ft.Icons.STOP
-            btn1.icon_color = "#1e01fb"
-            btn1.disabled = True
+            btn4.icon = ft.Icons.STOP
+            btn4.icon_color = "#1e01fb"
+            btn4.disabled = True
 
         page.update()
 
@@ -104,15 +104,15 @@ def main(page: ft.Page):
 
         if btn1.data + btn.data + btn3.data + btn4.data + btn2.data % 2 == 1:
 
-            btn2.icon = ft.Icons.STOP
-            btn2.icon_color = "#ff0000"
-            btn2.disabled = True
+            btn5.icon = ft.Icons.STOP
+            btn5.icon_color = "#ff0000"
+            btn5.disabled = True
 
         else:
 
-            btn2.icon = ft.Icons.STOP
-            btn2.icon_color = "#1e01fb"
-            btn2.disabled = True
+            btn5.icon = ft.Icons.STOP
+            btn5.icon_color = "#1e01fb"
+            btn5.disabled = True
 
         page.update()
 
