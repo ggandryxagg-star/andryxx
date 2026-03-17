@@ -11,9 +11,10 @@ def main(page: ft.Page):
     ft.MainAxisAlignment.CENTER
     
     def crest(e):
-        if btn.on_click == 1:
+        if btn.on_click == True:
             btn.icon_color == 'blue'
-            
+            page.update()
+
 
 
     btn = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
