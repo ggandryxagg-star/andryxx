@@ -11,8 +11,6 @@ def main(page: ft.Page):
 
     page.window.height = 1000
     page.window.width = 1000
-
-    ft.MainAxisAlignment.CENTER
     
     def crest(e):
         
@@ -21,6 +19,7 @@ def main(page: ft.Page):
             btn.icon = ft.Icons.STOP
             btn.icon_size = 200
             hodi.value = f'Ходят: {hods1}'
+            btn.disabled()
             page.update
 
     btn = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, on_click=crest)
