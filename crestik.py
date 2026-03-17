@@ -3,9 +3,9 @@ import flet as ft
 
 def main(page: ft.Page):
     
-    hods = ft.Text('Синие', color="#3700ff")
+    hods = 'Синие'
 
-    hods1 = ft.Text('Красные', color="#ff0808")
+    hods1 = 'Красные'
 
     page.title = 'Крестики нолики'
 
@@ -17,7 +17,7 @@ def main(page: ft.Page):
         if btn.on_click == crest:
             btn.icon_color = "#3700ff"
             btn.icon = ft.Icons.STOP
-            btn.icon_size = 150
+            btn.icon_size = 100
             hodi.value = f'Ходят: {hods1}'
             btn.disabled = True
             page.update
