@@ -14,7 +14,7 @@ def main(page: ft.Page):
     
     def crest(e):
         
-        if btn.on_click == crest:
+        if btn.on_click == True:
             btn.icon_color = "#3700ff"
             btn.icon = ft.Icons.STOP
             btn.icon_size = 100
@@ -22,7 +22,7 @@ def main(page: ft.Page):
             btn.disabled = True
             page.update
         
-        if btn1.on_click == crest:
+        if btn1.on_click == True:
             btn1.icon_color = "#3700ff"
             btn1.icon = ft.Icons.STOP
             btn1.icon_size = 100
