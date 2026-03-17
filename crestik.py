@@ -3,10 +3,6 @@ import flet as ft
 
 def main(page: ft.Page):
     
-    hods = 'Синие'
-
-    hods1 = 'Красные'
-
     page.title = 'Крестики нолики'
 
     page.window.height = 1000
@@ -14,36 +10,11 @@ def main(page: ft.Page):
     
     def crest(e):
 
-        if btn.on_click == crest:
-            btn.icon_color = "#3700ff"
-            btn.icon = ft.Icons.STOP
-            btn.icon_size = 100
-            hodi.value = f'Ходят: {hods1}'
-            btn.disabled = True
-            btn.data = 1
-            page.update
-        
-        elif btn1.on_click == crest:
-            btn1.icon_color = "#3700ff"
-            btn1.icon = ft.Icons.STOP
-            btn1.icon_size = 100
-            hodi.value = f'Ходят: {hods1}'
-            btn1.disabled = True
-            page.update
-        
-        
+        pass
 
     btn = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
     btn1 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-    btn2 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-    btn3 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-    btn4 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-    btn5 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-    btn6 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-    btn7 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-    btn8 = ft.IconButton(icon=ft.Icons.ARROW_CIRCLE_DOWN, width=150, height=150, icon_size=100, data=0, on_click=crest)
-        
-    hodi = ft.Text(value=f'Ходят: {hods}', size=100, height=200)
+    btn2 = ft.IconButton(icon=ft.Icons.ADS_CLICK, width=150, height=150, icon_size=100, data=0, on_click=crest)
 
     column1 = ft.Row(
         controls=[
@@ -55,27 +26,7 @@ def main(page: ft.Page):
         spacing=20
     )
 
-    column2 = ft.Row(
-        controls=[
-            btn3,
-            btn4,
-            btn5
-        ],
-        alignment=ft.MainAxisAlignment.CENTER,
-        spacing=20
-    )
-
-    column3 = ft.Row(
-        controls=[
-            btn6,
-            btn7,
-            btn8
-        ],
-        alignment=ft.MainAxisAlignment.CENTER,
-        spacing=20
-    )   
-
-    page.add(hodi, column1, column2, column3)
+    page.add(column1)
     
 
 ft.run(main=main)
