@@ -8,6 +8,8 @@ def main(page: ft.Page):
     page.window.height = 1000
     page.window.width = 1000
 
+    ft.MainAxisAlignment.CENTER
+    
     def crest(e):
         pass
 
