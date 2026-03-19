@@ -15,6 +15,8 @@ def main(page: ft.Page):
 
         btn.data = 1
 
+        print(btn.data + btn1.data + btn2.data + btn3.data + btn4.data + btn5.data)
+
         if btn1.data + btn2.data + btn3.data + btn4.data + btn5.data % 2 == 1:
 
             btn.icon = ft.Icons.STOP
@@ -32,6 +34,8 @@ def main(page: ft.Page):
     def crest1(e):
 
         btn1.data = 1
+
+        print(btn.data + btn1.data + btn2.data + btn3.data + btn4.data + btn5.data)
 
         if btn.data + btn2.data + btn3.data + btn4.data + btn4.data % 2 == 1:
 
@@ -51,6 +55,8 @@ def main(page: ft.Page):
 
         btn2.data = 1
 
+        print(btn.data + btn1.data + btn2.data + btn3.data + btn4.data + btn5.data)
+
         if btn1.data + btn.data + btn3.data + btn4.data + btn5.data % 2 == 1:
 
             btn2.icon = ft.Icons.STOP
@@ -68,6 +74,8 @@ def main(page: ft.Page):
     def crest3(e):
 
         btn3.data = 1
+
+        print(btn.data + btn1.data + btn2.data + btn3.data + btn4.data + btn5.data)
 
         if btn1.data + btn2.data + btn.data + btn4.data + btn5.data% 2 == 1:
 
@@ -87,6 +95,8 @@ def main(page: ft.Page):
 
         btn4.data = 1
 
+        print(btn.data + btn1.data + btn2.data + btn3.data + btn4.data + btn5.data)
+
         if btn.data + btn2.data + btn3.data + btn1.data + btn5.data % 2 == 1:
 
             btn4.icon = ft.Icons.STOP
@@ -104,6 +114,8 @@ def main(page: ft.Page):
     def crest5(e):
 
         btn5.data = 1
+
+        print(btn.data + btn1.data + btn2.data + btn3.data + btn4.data + btn5.data)
 
         if btn1.data + btn.data + btn3.data + btn4.data + btn2.data % 2 == 1:
 
