@@ -20,11 +20,6 @@ def main(page: ft.Page):
             btn.icon = ft.Icons.STOP
             btn.icon_color = "#ff0000"
             btn.disabled = True
-
-
-        elif btn.icon_color == btn1.icon_color and btn1.icon_color == btn2.icon_color and btn.icon_color == '#ff0000':
-
-            page.add(textus_20)
                         
         else:
 
