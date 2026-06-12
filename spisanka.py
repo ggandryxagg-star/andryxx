@@ -7,17 +7,9 @@ bot = telebot.TeleBot('8928265509:AAFxL2vRWzFV5zIqwuGznTYXejt0ne7CmiU')
 
 @bot.message_handler(commands=['start'])
 
-def start(message):
+def main(message):
 
     bot.send_message(message.chat.id, 'Этот бот для списаний продкутов, привета')
-
-
-def spisi(message):
-
-    pass
-
-
-
 
 
 bot.polling(none_stop=True)
