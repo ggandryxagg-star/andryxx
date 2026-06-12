@@ -6,14 +6,14 @@ from telebot import *
 colvo = None 
 
 
-bot = telebot.TeleBot('')
+bot = telebot.TeleBot("8928265509:AAENWju3gxPclv6xOHAIcFTkLP7d_N9Qocs")
 
 
 @bot.message_handler(commands=['start'])
 
 def main(message):
 
-    pass 
+    bot.send_message(message.chat.id, 'Привета, бот поможет списывать продукты')
 
 
-bot.polling(None_stop=True)
+bot.polling(none_stop=True)
