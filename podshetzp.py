@@ -1,15 +1,11 @@
-from datetime import * 
 import telebot 
-from telebot import *
-
-
-colvo = None 
-
 
 bot = telebot.TeleBot("8928265509:AAENWju3gxPclv6xOHAIcFTkLP7d_N9Qocs")
 
-
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=
+                     [
+                         'start'
+                     ])
 
 def main(message):
 
